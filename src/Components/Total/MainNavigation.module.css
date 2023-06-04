@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* 부모 요소 기준 y축 중앙정렬 */
+    align-items: center;
+
+    padding: 8px 12px;
+
+    background-color: black;
+    font-family: 'GongGothicMedium';
+    font-size: 30px;
+}
+
+.title {
+    height: 50px;   
+    /* src: url("../../img/title2.png"); */
+}
+
+
+/* 하이퍼링크 메뉴 : 연구실, 미니게임, 기록실 */
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    /* 왼쪽에만 padding이 있길래 */
+    padding: 0px;
+    /* navbar 자체를 위아래로 넓어지게함. 그렇지않기위한 margin */
+    margin: 0px
+    
+}
+
+.navbar_menu li {
+    /* menu들 간의 간격. 상하 8px 좌우 12px */
+    padding: 12px 20px;
+}
+
+.navbar_menu li:hover {
+    background-color: orange;
+    border-radius: 4px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+/* 로그인, 회원가입 버튼 */
+.navbar_member {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar_member button {
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    margin: 2px;
+
+    border-radius: 20px;
+    border: solid #FFBD2E 3px;
+
+    background-color: black;
+    color: #FFBD2E;
+    font-family: 'GongGothicMedium';
+    font-size:24px;
+}
+
+.navbar_login {
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar_member {
+        text-align: center;
+        /* align-items: center; */
+        /* 왜지? */
+        width: 80%;
+    }
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

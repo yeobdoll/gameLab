@@ -1,0 +1,349 @@
+/* font-weight */
+:root {
+    --weight-regular: 400;
+} 
+
+body {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 24px;
+    cursor: default;
+    margin: 0;
+    color: white;
+    background-image: url('/src/img/black50.png');
+}
+
+table {
+    border-collapse: collapse;
+}
+
+p { 
+    display: inline;
+    margin: 0;
+    font-weight: var(--weight-regular);
+}
+
+.labbox {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('/src/img/black50.png');
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 5px;
+    padding: 2em;
+    margin: 0 15em;
+    background-color: #373737;
+    z-index: 1;
+    color: white;
+}
+
+.full { /* img의 스타일링을 그대로 따옴 */
+    border: 2px solid orange;
+    display: flex;
+    padding: 0;
+    margin: 0.1em 0;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.btn {
+    cursor:pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.selected {
+    height: 50px;
+    width: 50px;
+}
+
+.portrait {
+    margin-top: 15px;
+    border: solid white 3.5px;
+    border-radius: 0;
+    height: 100px; 
+    width: 100px;
+}
+
+.inventory img:hover {
+    transform: scale(1.05);
+    transition: all 300ms ease-in;
+}
+
+.BlueSelectingBox img:hover {
+    transform: scale(1.05);
+    transition: all 300ms ease-in;
+}
+
+.RedSelectingBox img:hover {
+    transform: scale(1.05);
+    transition: all 300ms ease-in;
+}
+
+.lvHandler:hover {
+    color: #feb546;
+}
+
+
+
+.reset_box {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reset {
+    height: 40px;
+    width: 100px;
+
+    border: solid 3.5px #FFD700;
+    border-radius: 20px;
+
+    background-color: black;
+    color: white;
+    font-family: "GongGothicLight";
+    font-size: 110%;
+    font-weight: 200;
+
+    cursor: pointer; /* 이것만 추가 */
+}
+
+.reset_p {
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.BlueItemBox{
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.RedItemBox{
+    width: 300px;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.inventory {
+    width: 235px;
+    margin-left: 30px;
+    height: 120px;
+}
+
+.BlueSelectingBox{
+    /*캐릭 , selectingbox, lv*/
+    display: inline-block;
+}
+
+.RedSelectingBox{
+    display: inline-block;
+}
+
+.BlueStatTable{
+    width: 360px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 300px;
+    font-size: 27px;
+
+}
+
+.BlueStatTable th {
+    border: 2px solid orange;
+}
+
+.BlueStatTable td {
+    border: 2px solid orange;
+}
+
+.RedStatTable{
+    display: inline-block;
+    width: 360px;
+    margin-top: 30px;
+    margin-left: 300px;
+    font-size: 27px;
+}
+
+.RedStatTable th{
+    border: 2px solid orange;
+}
+
+.RedStatTable td {
+    border: 2px solid orange;
+}
+
+.RealInventory {
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    margin-top: 15px;
+    margin-left: 60px;
+    background-color: black;
+}
+
+.BlueChampion{
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.GetBlueChampion {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.RedChampion{
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.heal {
+    font-size: 1rem;
+    padding: 0.2em 0.4em;
+    border: 3.2px solid #feb546;
+    border-radius: 8px;
+    background-color: #4d4d4d;
+    color: white;
+
+    cursor: pointer; /* 이것만추가 */
+}
+
+.heal:hover {
+    border: 3.2px outset #feb546;
+    background-color: #feb546;
+    transition: all 125ms ease-out;
+}
+
+.lab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 10em 0 -5.5em;
+}
+
+/* AttackBox */
+.attack_p {
+    margin: 1.2em 2em 0 0 ;
+    font-size: 40px;
+    color: #feb546;
+}
+
+.GetAttack_p {
+    margin: 1.2em 1.2em 0 0 ;
+    font-size: 40px;
+    color: #feb546;
+}
+
+.AttackBox{
+    display: inline-block;
+}
+
+.GetAttackBox {
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.AttackBtn_1 {
+    margin: 2px 0 5px 8em;
+    display: block;
+}
+
+.inputTimes {
+    margin: 0 15px 0 2px;
+    height: 25px;
+    width: 40px;
+    border-radius: 8px;
+    border: 2px solid #feb546;
+}
+
+.AttackBtn_1, .AttackBtn, .GetAttackBtn_1, .GetAttackBtn {
+    font-size: 1rem;
+    padding: 0.2em 0.4em;
+    border: 3.2px solid #feb546;
+    border-radius: 8px;
+    background-color: #4d4d4d;
+    color: white;
+
+    cursor: pointer; /* 이것만추가 */
+}
+
+.AttackBtn_1:hover {
+    border: 3.2px outset #feb546;
+    background-color: #feb546;
+    transition: all 125ms ease-out;
+}
+
+.GetAttackBtn_1 {
+    margin: 2px 0 5px 8em;
+    display: block;
+}
+
+.GetAttackBtn_1:hover {
+    border: 3.2px outset #feb546;
+    background-color: #feb546;
+    transition: all 125ms ease-out;
+}
+
+.tiems_p {
+    display: inline;
+}
+
+.AttackBtn {
+    margin-left: 3.8em;
+}
+
+.AttackBtn:hover {
+    border: 3.2px outset #feb546;
+    background-color: #feb546;
+    transition: all 125ms ease-out;
+}
+
+.GetAttackBtn {
+    margin-left: 2em;
+}
+
+.GetAttackBtn:hover {
+    border: 3.2px outset #feb546;
+    background-color: #feb546;
+    transition: all 125ms ease-out;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.doAttack{
+    margin-left: 180px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.GetAttack{
+    margin-left: 180px;
+}

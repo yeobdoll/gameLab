@@ -1,0 +1,47 @@
+/* .tot {
+    width: ;
+    height: auto;
+
+    display: block;
+    align-items: baseline;
+    justify-content: baseline;
+
+    background-color: black;
+
+    padding: 0%;
+    margin: 0%;
+} */
+
+.total {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    /*border: solid 1px black;*/
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 30px;
+}
+
+.list_item_blue, .list_item_red {
+    display: inline;
+    border: solid 2.5px rgb(245, 200, 0);
+    margin: 10px 20px;
+    padding: 20px
+}
+
+.list_item_blue{
+    background-color: #01579b;
+}
+
+.list_item_red{
+    background-color: #ff5252;
+}
+
+.date {
+    display: block;
+
+    
+}
